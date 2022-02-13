@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic To-Do List</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/b190e64971.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- main title -->
@@ -13,15 +15,20 @@
     <!-- to do input -->
     <div class="container">
         <label for="add-item"></label>
-        <input type="text" id="add-item" name="add-item" placeholder="Add item to list">
+        <input type="text" id="add-item" name="add-item" placeholder="Add item to list" required>
         <!-- button to submit -->
-        <button class="btn">Submit</button>
+        <button class="btn submit-btn">Submit</button>
         <!-- butotn to clear list-->
         <button class="clear-list">Clear List</button>
     </div>
     <!-- to do list -->
     <ul id="list">
         <!-- will contain the to-do list items-->
+        <li>Wake Up!
+            <button class="btn2" id="done-btn"><i class="fa-solid fa-check"></i></button>
+            <button class="btn2" id="delete-btn"><i class="fa-solid fa-trash-can"></i></button>
+            <button class="btn2" id="edit-btn">Edit</button>
+        </li>
     </ul>
     <script src="app.js"></script>
 </body>
