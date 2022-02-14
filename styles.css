@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.title {
+    text-align: center;
+    padding: 2rem;
+}
+
+.container {
+    padding: 50px;
+    text-align: center;
+}
+
+#add-item, .btn, .btn2 {
+    font-size: 1.5rem;
+}
+
+#list {
+    padding: 50px;
+    font-size: 2rem;
+    list-style-type: none;
+    
+}
+
+li {
+    display: block;
+    align-content: space-between;
+    padding: 15px;
+}

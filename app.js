@@ -3,6 +3,9 @@ const clearBtn = document.querySelector('.clear-list');
 const newItem = document.getElementById('add-item');
 const ul = document.getElementById('list');
 let btns = document.querySelectorAll('.btn2');
+const doneBtn = document.getElementById('done-btn');
+const deleteBtn = document.getElementById('delete-btn');
+const editBtn = document.getElementById('edit-btn');
 
 // function to add item
 const createNewItem = () => {
@@ -23,25 +26,12 @@ const createNewItem = () => {
             button.innerHTML = btn.innerHTML
             newLi.appendChild(button)
             
-            button.addEventListener('click', modifyItem)
+            //button.addEventListener('click', modifyItem)
         }) 
         
     }
+  
 }; 
-
-
-
-const modifyItem = (e) => {
-    if (e.target.id == 'done-btn'){
-        console.log('done')
-    };
-    if (e.target.id == 'delete-btn'){
-        console.log('del')
-    };
-    if (e.target.id == 'edit-btn'){
-        console.log('ed')
-    }
-}
 
 
 // function to remove all elements from list
@@ -58,10 +48,6 @@ const addItemAfterKeypress = (event) => {
 };
 newItem.addEventListener('keypress', addItemAfterKeypress);
 
-// btn to mark complete, delete, edit item
-btns.forEach(function(e){
-    e.addEventListener('click', modifyItem)
-})
 
 // submit button to add item to page on click
 submitBtn.addEventListener('click', createNewItem);
